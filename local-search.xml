@@ -49,22 +49,22 @@
   
   
   <entry>
-    <title></title>
+    <title>About me</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[body {      font-family: "LXGW WenKai", sans-serif;      /* Lite version */      /* font-family: "LXGW WenKai Lite", sans-serif; */      /* TC version */      /* font-family: "LXGW WenKai TC", sans-serif; */      /* Screen version */      /* font-family: "LXGW WenKai Screen", sans-serif; */    }button.md-top {  font-family: LXGW WenKai; /* 修改字体 */  font-size: 16px; /* 修改字体大小 */  font-weight: bold; /* 修改字体粗细 */  color: #518FC1; /* 修改字体颜色 */}]]></content>
+    <content type="html"><![CDATA[<p>南开大学智能科学与技术本科生，正在努力学习ai和机器人的相关知识，期待和各位交流！邮箱(mailto:<a href="mailto:&#x79;&#102;&#95;&#x64;&#x6f;&#110;&#x67;&#x40;&#x6e;&#x61;&#110;&#107;&#x61;&#105;&#x2e;&#101;&#100;&#x75;&#x2e;&#99;&#110;">&#x79;&#102;&#95;&#x64;&#x6f;&#110;&#x67;&#x40;&#x6e;&#x61;&#110;&#107;&#x61;&#105;&#x2e;&#101;&#100;&#x75;&#x2e;&#99;&#110;</a>)</p><p>An undergraduate student at NKU,I’m interested in ai+robotics,looking foward to connecting with you!This is my email address(mailto:<a href="mailto:&#x79;&#x66;&#95;&#100;&#x6f;&#110;&#103;&#x40;&#110;&#x61;&#110;&#x6b;&#97;&#105;&#x2e;&#x65;&#x64;&#117;&#x2e;&#x63;&#110;">&#x79;&#x66;&#95;&#100;&#x6f;&#110;&#103;&#x40;&#110;&#x61;&#110;&#x6b;&#97;&#105;&#x2e;&#x65;&#x64;&#117;&#x2e;&#x63;&#110;</a>)</p>]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title>About me</title>
+    <title></title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<p>南开大学智能科学与技术本科生，正在努力学习ai和机器人的相关知识，期待和各位交流！邮箱(mailto:<a href="mailto:&#x79;&#102;&#95;&#x64;&#x6f;&#110;&#103;&#x40;&#x6e;&#x61;&#x6e;&#x6b;&#x61;&#x69;&#46;&#101;&#100;&#x75;&#46;&#x63;&#x6e;">&#x79;&#102;&#95;&#x64;&#x6f;&#110;&#103;&#x40;&#x6e;&#x61;&#x6e;&#x6b;&#x61;&#x69;&#46;&#101;&#100;&#x75;&#46;&#x63;&#x6e;</a>)</p><p>An undergraduate student at NKU,I’m interested in ai+robotics,looking foward to connecting with you!This is my email address(mailto:<a href="mailto:&#121;&#x66;&#x5f;&#100;&#x6f;&#x6e;&#103;&#64;&#110;&#97;&#110;&#x6b;&#x61;&#x69;&#x2e;&#101;&#x64;&#117;&#x2e;&#x63;&#x6e;">&#121;&#x66;&#x5f;&#100;&#x6f;&#x6e;&#103;&#64;&#110;&#97;&#110;&#x6b;&#x61;&#x69;&#x2e;&#101;&#x64;&#117;&#x2e;&#x63;&#x6e;</a>)</p>]]></content>
+    <content type="html"><![CDATA[body {      font-family: "LXGW WenKai", sans-serif;      /* Lite version */      /* font-family: "LXGW WenKai Lite", sans-serif; */      /* TC version */      /* font-family: "LXGW WenKai TC", sans-serif; */      /* Screen version */      /* font-family: "LXGW WenKai Screen", sans-serif; */    }button.md-top {  font-family: LXGW WenKai; /* 修改字体 */  font-size: 16px; /* 修改字体大小 */  font-weight: bold; /* 修改字体粗细 */  color: #518FC1; /* 修改字体颜色 */}]]></content>
     
   </entry>
   
