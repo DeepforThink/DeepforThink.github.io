@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>summary of january</title>
+    <link href="/2025/01/31/25%E5%B9%B41%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+    <url>/2025/01/31/25%E5%B9%B41%E6%9C%88%E6%80%BB%E7%BB%93/</url>
+    
+    <content type="html"><![CDATA[<p>好久没有更新了，一方面是因为自己考试周太忙，考完试之后就有些懈怠<del>摆烂</del>了，懒懒的没做周结，另一方面是自己的工作实在是乏善可陈，好多事情都还在做的途中，没有做完所以也有一点强迫症的感觉不想发。新的一年的第一次月结也算是提醒我好好的去完成自己的工作，继续重启周结，珍惜自己现在所拥有的时间。</p><hr><h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul><li>重新继续健身，还是得刷刷脂才行，所以有氧训练是要跟上来的。过年果然就是在不停的吃吃吃的路途中，感觉长胖太容易了。。。。</li><li>虽然期末离散和微分与复变考的不理想（考这两科的状态明显不对），但所幸其他发挥还算正常</li><li>和朋友们去南京和无锡社会实践了。体感很好，南京和无锡都很出片！所以旅游和同学一起或者自己一个人都是很好的选择！</li><li>一时冲动做错了一些事，虔诚希望能够重新来过。开始享受独处的时光，回家渐渐地调整自己的生活作息。</li></ul><hr><h2 id="学习和科研"><a href="#学习和科研" class="headerlink" title="学习和科研"></a>学习和科研</h2><ul><li>联系了学长并分配了任务，下学期展开视觉辅助模仿学习和rl的双臂机器人工作</li><li>安装了双系统，重新学了学linux,准备安装ros跟着教程了解下学期机器人比赛的知识</li><li>看完了《你缺计科》和mit的missing semester,部分笔记之后会更新</li><li>看了coursera 的机器学习（目前到第五周），个人感觉真的是浅显易懂，相比于cs229数学方面的前置要求几乎没有，很适合小白入手</li><li>读了模仿学习相关论文，学习科研的一些基本要求</li><li>做线代（mit）和概统的笔记，之后会发布在博客上</li></ul><hr><h2 id="目标和安排"><a href="#目标和安排" class="headerlink" title="目标和安排"></a>目标和安排</h2><ul><li><input disabled="" type="checkbox"> 完成机器学习，将资料上传github</li><li><input disabled="" type="checkbox"> 继续阅读模仿学习和强化学习方向的论文</li><li><input disabled="" type="checkbox"> 学习ros的使用</li><li><input disabled="" type="checkbox"> 做体检，见朋友，每天都要过得充实</li><li><input disabled="" type="checkbox"> 减少手机和无意义事情上面的时间浪废</li><li><input disabled="" type="checkbox"> 学习构建知识体系（pkmer）方面的知识</li><li><input disabled="" type="checkbox"> 多做事情少焦虑</li><li><input disabled="" type="checkbox"> 完成线代和概统，missing semester的笔记上传</li><li><input disabled="" type="checkbox"> 继续看cs61b</li></ul><p>不断迭代，把握住现在的每一分每一秒</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Life</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>反思</tag>
+      
+      <tag>学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第四周小记</title>
     <link href="/2024/12/22/%E7%AC%AC%E5%9B%9B%E5%91%A8%E5%B0%8F%E8%AE%B0/"/>
     <url>/2024/12/22/%E7%AC%AC%E5%9B%9B%E5%91%A8%E5%B0%8F%E8%AE%B0/</url>
@@ -22,9 +49,9 @@
       
       <tag>反思</tag>
       
-      <tag>效率</tag>
-      
       <tag>学习</tag>
+      
+      <tag>效率</tag>
       
     </tags>
     
@@ -138,7 +165,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<p>南开大学智能科学与技术本科生，正在努力学习ai和机器人的相关知识，期待和各位交流！邮箱(mailto:<a href="mailto:&#121;&#102;&#x5f;&#x64;&#x6f;&#x6e;&#x67;&#64;&#x6d;&#97;&#105;&#x6c;&#x2e;&#110;&#97;&#x6e;&#107;&#x61;&#105;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;">&#121;&#102;&#x5f;&#x64;&#x6f;&#x6e;&#x67;&#64;&#x6d;&#97;&#105;&#x6c;&#x2e;&#110;&#97;&#x6e;&#107;&#x61;&#105;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#110;</a>)</p><p>An undergraduate student at NKU,I’m interested in ai+robotics,looking foward to connecting with you!This is my email address(mailto:<a href="mailto:&#x79;&#x66;&#x5f;&#x64;&#111;&#110;&#103;&#x40;&#x6d;&#x61;&#x69;&#x6c;&#46;&#110;&#x61;&#110;&#x6b;&#x61;&#105;&#46;&#x65;&#100;&#117;&#x2e;&#99;&#110;">&#x79;&#x66;&#x5f;&#x64;&#111;&#110;&#103;&#x40;&#x6d;&#x61;&#x69;&#x6c;&#46;&#110;&#x61;&#110;&#x6b;&#x61;&#105;&#46;&#x65;&#100;&#117;&#x2e;&#99;&#110;</a>)</p>]]></content>
+    <content type="html"><![CDATA[<p>南开大学智能科学与技术本科生，正在努力学习ai和机器人的相关知识，期待和各位交流！邮箱(mailto:<a href="mailto:&#x79;&#x66;&#95;&#100;&#x6f;&#x6e;&#x67;&#64;&#109;&#97;&#105;&#x6c;&#x2e;&#x6e;&#97;&#110;&#x6b;&#x61;&#105;&#46;&#x65;&#100;&#117;&#x2e;&#99;&#110;">&#x79;&#x66;&#95;&#100;&#x6f;&#x6e;&#x67;&#64;&#109;&#97;&#105;&#x6c;&#x2e;&#x6e;&#97;&#110;&#x6b;&#x61;&#105;&#46;&#x65;&#100;&#117;&#x2e;&#99;&#110;</a>)</p><p>An undergraduate student at NKU,I’m interested in ai+robotics,looking foward to connecting with you!This is my email address(mailto:<a href="mailto:&#x79;&#x66;&#95;&#x64;&#x6f;&#110;&#103;&#64;&#x6d;&#97;&#x69;&#108;&#46;&#110;&#x61;&#110;&#107;&#97;&#105;&#x2e;&#101;&#100;&#x75;&#46;&#x63;&#x6e;">&#x79;&#x66;&#95;&#x64;&#x6f;&#110;&#103;&#64;&#x6d;&#97;&#x69;&#108;&#46;&#110;&#x61;&#110;&#107;&#97;&#105;&#x2e;&#101;&#100;&#x75;&#46;&#x63;&#x6e;</a>)</p>]]></content>
     
   </entry>
   
