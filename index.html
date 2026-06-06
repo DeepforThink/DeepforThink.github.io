@@ -1,788 +1,343 @@
-
-
-<!DOCTYPE html>
-<html lang="en" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-
-  <link rel="apple-touch-icon" sizes="76x76" href="/images/touxiang.png">
-  <link rel="icon" href="/images/touxiang.png">
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Donf">
-  <meta name="keywords" content="">
-  
-    <meta property="og:type" content="website">
-<meta property="og:title" content="DeepforThink&#39;s Blog">
-<meta property="og:url" content="https://deepforthink.github.io/index.html">
-<meta property="og:site_name" content="DeepforThink&#39;s Blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Donf">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
-  
-  <title>DeepforThink&#39;s Blog</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
-<link rel="stylesheet" href="/css/custom.css">
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"deepforthink.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":true,"scope":[],"typespeed":70,"cursorchar":"_"},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100,"showspinner":false,"tricklespeed":100}},"code_language":{"enable":true,"default":"text"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0,"headingselector":"h1,h2,h3,h4,h5,h6","collapsedepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Donf&#39;s blog</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>Links</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/images/bg.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text=" 循此苦旅，以达繁星"></span>
-          
-        </div>
-
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2025/01/31/25%E5%B9%B41%E6%9C%88%E6%80%BB%E7%BB%93/" target="_self">
-          <img src="/images/2.png" srcset="/img/loading.gif" lazyload alt="summary of january">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/01/31/25%E5%B9%B41%E6%9C%88%E6%80%BB%E7%BB%93/" target="_self">
-          summary of january
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2025/01/31/25%E5%B9%B41%E6%9C%88%E6%80%BB%E7%BB%93/" target="_self">
-        <div>
-          好久没有更新了，一方面是因为自己考试周太忙，考完试之后就有些懈怠摆烂了，懒懒的没做周结，另一方面是自己的工作实在是乏善可陈，好多事情都还在做的途中，没有做完所以也有一点强迫症的感觉不想发。新的一年的第一次月结也算是提醒我好好的去完成自己的工作，继续重启周结，珍惜自己现在所拥有的时间。  生活 重新继续健身，还是得刷刷脂才行，所以有氧训练是要跟上来的。过年果然就是在不停的吃吃吃的路途中，感觉长胖太容
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-01-31 18:00" pubdate>
-              2025-01-31
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Life/" class="category-chain-item">Life</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8F%8D%E6%80%9D/">#反思</a>
-            
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/12/22/%E7%AC%AC%E5%9B%9B%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-          <img src="/images/teaser.png" srcset="/img/loading.gif" lazyload alt="第四周小记">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/12/22/%E7%AC%AC%E5%9B%9B%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-          第四周小记
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2024/12/22/%E7%AC%AC%E5%9B%9B%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-        <div>
-          关于效率提升这一周相对来说在自己的整个工作流的迭代上面还是进步很明显，想和做的同时性，以及对于自己的做事情的实时记录和反思让我找回了对生活的掌控感，看了很多开创性的工作，在复习准备期末的同时‘也在一直向前赶cs61A的进度，争取寒假能去刷更多的课，以及争取到更多的科研的训练机会。反复迭代优化自己的工作方式，避免边际效应的出现，将自己转入不同的工作流的时间和精力代价减小，探索出适合自己的高效方法，是
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-12-22 11:06" pubdate>
-              2024-12-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Life/" class="category-chain-item">Life</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8F%8D%E6%80%9D/">#反思</a>
-            
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
-            
-              <a href="/tags/%E6%95%88%E7%8E%87/">#效率</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/12/16/%E6%89%AF%E6%89%AF%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/" target="_self">
-          <img src="/images/3.png" srcset="/img/loading.gif" lazyload alt="扯扯具身智能">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/12/16/%E6%89%AF%E6%89%AF%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/" target="_self">
-          扯扯具身智能
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2024/12/16/%E6%89%AF%E6%89%AF%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/" target="_self">
-        <div>
-          智能概论结课论文而来的一些感慨具身智能大火背后，如何看待传统自动化控制和深度学习transformer等框架的泛化结合，至少在这几个月的自我理解里面，我个人的观点在于两者在目前还是不可分割的，在未来的机器人的发展中，拥有计算机和自动化背景的学生，至少在具身智能这样的一个名词没有彻底被资本抛弃的情况下，是会存在稀缺性的。当下来看，传统控制或者更细的&#x3D;&#x3D;机器人运动规划&#x3D;&
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-12-16 22:00" pubdate>
-              2024-12-16
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Think/" class="category-chain-item">Think</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8F%8D%E6%80%9D/">#反思</a>
-            
-              <a href="/tags/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/">#具身智能</a>
-            
-              <a href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/">#机器人</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/12/16/%E7%AC%AC%E4%BA%8C%E4%B8%89%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-          <img src="/images/5.png" srcset="/img/loading.gif" lazyload alt="第二三周小记">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/12/16/%E7%AC%AC%E4%BA%8C%E4%B8%89%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-          第二三周小记
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2024/12/16/%E7%AC%AC%E4%BA%8C%E4%B8%89%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-        <div>
-          生活  开了很多坑，结果目前看来我的时间管理出现了极大的问题，每个方向都完成得不好  cet6这回寄的一点不剩，只能说英语这个东西需要好好的安排，把他融入到每天的空闲时间里面长期进步  期末的各种复习接踵而至，感觉自己还可以优化复习的进展，最重要的是控制住自己想玩的欲望，高效总结掌握后就可以抽出更多的时间来完成填开的坑   规律作息还是没有做到，导致效率变得很低和进入心流的次数变少。  进入分享群
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-12-16 20:00" pubdate>
-              2024-12-16
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Life/" class="category-chain-item">Life</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8F%8D%E6%80%9D/">#反思</a>
-            
-              <a href="/tags/%E6%95%88%E7%8E%87/">#效率</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/12/01/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-          <img src="/images/4.png" srcset="/img/loading.gif" lazyload alt="第一周小记">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/12/01/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-          第一周小记
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2024/12/01/%E7%AC%AC%E4%B8%80%E5%91%A8%E5%B0%8F%E8%AE%B0/" target="_self">
-        <div>
-          生活有一说一，真的不知道学这个专业我还有多少自己的时间用来探索自己感兴趣的事。。。。。。 成吨的作业，感觉像是自动化和计算机的双学位一样，结果至少我觉得计算机方面完全没有让学生去掌握到本质，我都不知道有一些工作作业做的意义在哪里。。。 但是anyway,路是要靠自己走出来的，看到现在具身智能数以万计的好玩的研究都在如火如荼的进行着，多去看文献！和学长还有优秀的同学学习，out of my conf
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-12-01 22:35" pubdate>
-              2024-12-01
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Life/" class="category-chain-item">Life</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8F%8D%E6%80%9D/">#反思</a>
-            
-              <a href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/">#机器人</a>
-            
-              <a href="/tags/%E8%BF%90%E5%8A%A8/">#运动</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2024/11/29/first/" target="_self">
-          <img src="/images/2.png" srcset="/img/loading.gif" lazyload alt="first blog">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/11/29/first/" target="_self">
-          first blog
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt " href="/2024/11/29/first/" target="_self">
-        <div>
-          这是我的个人博客，其实想做个人博客已经有很久了，但作为非完全科班自我摸索是需要更多的时间和毅力，希望自己再接再厉，该博客主要记录：  Learning：包括数学总结，ai相关学习，以及机器人相关的学习和实践 Reading：哲学，散文，诗集以及相关感悟和摘抄笔录 Diary：总结和反思 Others：摄影学习分享，音乐（吉他，钢琴练习）乐评，健身心得  1print(&quot;Welcome t
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-11-29 21:16" pubdate>
-              2024-11-29
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>fluid</span></a> 
-    </div>
-  
-  
-    <div class="statistics">
-  
-  
-
-  
-    
-      <span id="busuanzi_container_site_pv" style="display: none">
-        Views: 
-        <span id="busuanzi_value_site_pv"></span>
-        
-      </span>
-    
-    
-      <span id="busuanzi_container_site_uv" style="display: none">
-        Visitors: 
-        <span id="busuanzi_value_site_uv"></span>
-        
-      </span>
-    
-    
-
-  
-
-</div>
-
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100,"showspinner":false,"tricklespeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yufu Dong</title>
+    <meta
+      name="description"
+      content="Academic homepage of Yufu Dong, an undergraduate student at Nankai University interested in reinforcement learning, robot learning, and embodied intelligence."
+    />
+    <meta name="author" content="Yufu Dong" />
+    <meta property="og:title" content="Yufu Dong" />
+    <meta
+      property="og:description"
+      content="Undergraduate student at Nankai University interested in reinforcement learning, robot learning, and embodied intelligence."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deepforthink.github.io/" />
+    <meta property="og:image" content="https://github.com/deepforthink.png" />
+    <meta name="twitter:card" content="summary" />
+    <style>
+      :root {
+        color-scheme: light;
+        --background: #f7f7f4;
+        --surface: #ffffff;
+        --text: #242424;
+        --muted: #66645f;
+        --line: #dedbd2;
+        --accent: #8b2f2f;
+        --accent-soft: #f3e8e5;
+        --max-width: 980px;
       }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
+      * {
+        box-sizing: border-box;
+      }
 
+      html {
+        scroll-behavior: smooth;
+      }
 
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          "Inter", "Avenir Next", "Segoe UI", Arial, "Noto Sans", sans-serif;
+        line-height: 1.65;
+      }
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
 
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
 
+      .page {
+        display: grid;
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 52px;
+        width: min(var(--max-width), calc(100% - 40px));
+        margin: 0 auto;
+        padding: 58px 0 44px;
+      }
 
+      .sidebar {
+        position: sticky;
+        top: 36px;
+        align-self: start;
+      }
 
-  <script  src="/js/local-search.js" ></script>
+      .avatar {
+        display: block;
+        width: 184px;
+        height: 184px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: var(--surface);
+        object-fit: cover;
+      }
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+      h1 {
+        margin: 22px 0 6px;
+        font-size: 2rem;
+        line-height: 1.12;
+        letter-spacing: 0;
+      }
 
+      .role,
+      .affiliation,
+      .email {
+        margin: 2px 0;
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
 
+      .email {
+        margin-top: 10px;
+      }
 
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
 
-  
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+      .link-chip {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 5px 10px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: var(--surface);
+        color: var(--text);
+        font-size: 0.88rem;
+      }
 
+      .link-chip:hover,
+      .link-chip:focus {
+        border-color: var(--accent);
+        color: var(--accent);
+        text-decoration: none;
+      }
 
+      main {
+        min-width: 0;
+      }
 
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+      section {
+        margin-bottom: 38px;
+      }
 
+      h2 {
+        margin: 0 0 14px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--line);
+        font-size: 1.28rem;
+        line-height: 1.25;
+        letter-spacing: 0;
+      }
 
-  
+      p {
+        margin: 0 0 14px;
+      }
 
-  <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
-  </noscript>
-</body>
+      ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin: 7px 0;
+      }
+
+      .highlight {
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      .publication-list {
+        display: grid;
+        gap: 14px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .publication {
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: var(--surface);
+      }
+
+      .publication-title {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 700;
+      }
+
+      .publication-meta {
+        display: block;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .note {
+        color: var(--muted);
+      }
+
+      footer {
+        width: min(var(--max-width), calc(100% - 40px));
+        margin: 0 auto;
+        padding: 20px 0 34px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          grid-template-columns: 1fr;
+          gap: 30px;
+          padding-top: 34px;
+        }
+
+        .sidebar {
+          position: static;
+        }
+
+        .avatar {
+          width: 142px;
+          height: 142px;
+        }
+
+        h1 {
+          font-size: 1.82rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Profile">
+        <img
+          class="avatar"
+          src="https://github.com/deepforthink.png"
+          alt="Yufu Dong"
+          width="184"
+          height="184"
+        />
+        <h1>Yufu Dong</h1>
+        <p class="role">Undergraduate Student</p>
+        <p class="affiliation">Nankai University</p>
+        <p class="email">
+          <a href="mailto:yf_dong@mail.nankai.edu.cn"
+            >yf_dong(at)mail.nankai.edu.cn</a
+          >
+        </p>
+        <nav class="links" aria-label="Profile links">
+          <a class="link-chip" href="https://github.com/deepforthink">GitHub</a>
+          <a class="link-chip" href="https://dpthink.vercel.app/"
+            >Blog & Notes</a
+          >
+          <a
+            class="link-chip"
+            href="https://www.zhihu.com/people/liu-lang-de-si-xiang"
+            >Zhihu</a
+          >
+          <a class="link-chip" href="https://x.com/PiersonD015">X</a>
+        </nav>
+      </aside>
+
+      <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            I am an undergraduate student majoring in
+            <span class="highlight">Intelligent Science and Technology</span>
+            at Nankai University.
+          </p>
+          <p>
+            My current interests center on reinforcement learning, robot
+            learning, and embodied intelligence. I am especially interested in
+            how learning-based methods can help robots perceive, reason, and
+            act in the physical world.
+          </p>
+          <p>
+            Outside research and study, I enjoy guitar, sports, fitness, and
+            meeting people who are curious about intelligent systems.
+          </p>
+        </section>
+
+        <section id="interests">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Reinforcement learning and decision making</li>
+            <li>Robot learning, policy learning, and embodied intelligence</li>
+            <li>Vision-language-action models and action generation</li>
+            <li>Generative models for robot policies, including diffusion and flow-based methods</li>
+          </ul>
+        </section>
+
+        <section id="publications">
+          <h2>Publications</h2>
+          <p class="note">
+            I am still early in my research training. Publications and preprints
+            will be listed here when available.
+          </p>
+        </section>
+
+        <section id="writing">
+          <h2>Selected Writing & Notes</h2>
+          <ul class="publication-list">
+            <li class="publication">
+              <a
+                class="publication-title"
+                href="https://dpthink.vercel.app/posts/paper-reading/diffusion-policy/"
+                >Diffusion Policy: robot policy learning with diffusion models</a
+              >
+              <span class="publication-meta">Paper reading note</span>
+            </li>
+            <li class="publication">
+              <a
+                class="publication-title"
+                href="https://dpthink.vercel.app/posts/learning/vla-prerequisites/"
+                >From Transformer to Decision Transformer: prerequisites for VLA</a
+              >
+              <span class="publication-meta">Learning note</span>
+            </li>
+            <li class="publication">
+              <a
+                class="publication-title"
+                href="https://dpthink.vercel.app/posts/learning/flow-matching-first-principles/"
+                >Flow Matching from first principles</a
+              >
+              <span class="publication-meta">Generative modeling note</span>
+            </li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            Feel free to contact me by
+            <a href="mailto:yf_dong@mail.nankai.edu.cn">email</a> if you would
+            like to discuss reinforcement learning, embodied intelligence, robot
+            learning papers, or related study projects.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      Powered by GitHub Pages. Last updated in 2026.
+    </footer>
+  </body>
 </html>
