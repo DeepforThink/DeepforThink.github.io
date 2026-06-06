@@ -1,343 +1,335 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8" />
+    <title>Yufu Dong | Nankai University</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yufu Dong</title>
     <meta
       name="description"
       content="Academic homepage of Yufu Dong, an undergraduate student at Nankai University interested in reinforcement learning, robot learning, and embodied intelligence."
     />
-    <meta name="author" content="Yufu Dong" />
-    <meta property="og:title" content="Yufu Dong" />
+    <meta
+      name="keywords"
+      content="Yufu Dong, Nankai University, reinforcement learning, robot learning, embodied intelligence"
+    />
+    <link rel="canonical" href="https://deepforthink.github.io/" />
+    <meta property="og:title" content="Yufu Dong | Nankai University" />
     <meta
       property="og:description"
-      content="Undergraduate student at Nankai University interested in reinforcement learning, robot learning, and embodied intelligence."
+      content="Academic homepage of Yufu Dong, an undergraduate student at Nankai University."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://deepforthink.github.io/" />
     <meta property="og:image" content="https://github.com/deepforthink.png" />
-    <meta name="twitter:card" content="summary" />
-    <style>
-      :root {
-        color-scheme: light;
-        --background: #f7f7f4;
-        --surface: #ffffff;
-        --text: #242424;
-        --muted: #66645f;
-        --line: #dedbd2;
-        --accent: #8b2f2f;
-        --accent-soft: #f3e8e5;
-        --max-width: 980px;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
+      integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        background: var(--background);
-        color: var(--text);
-        font-family:
-          "Inter", "Avenir Next", "Segoe UI", Arial, "Noto Sans", sans-serif;
-        line-height: 1.65;
-      }
-
-      a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-
-      a:hover,
-      a:focus {
-        text-decoration: underline;
-      }
-
-      .page {
-        display: grid;
-        grid-template-columns: 260px minmax(0, 1fr);
-        gap: 52px;
-        width: min(var(--max-width), calc(100% - 40px));
-        margin: 0 auto;
-        padding: 58px 0 44px;
-      }
-
-      .sidebar {
-        position: sticky;
-        top: 36px;
-        align-self: start;
-      }
-
-      .avatar {
-        display: block;
-        width: 184px;
-        height: 184px;
-        border: 1px solid var(--line);
-        border-radius: 4px;
-        background: var(--surface);
-        object-fit: cover;
-      }
-
-      h1 {
-        margin: 22px 0 6px;
-        font-size: 2rem;
-        line-height: 1.12;
-        letter-spacing: 0;
-      }
-
-      .role,
-      .affiliation,
-      .email {
-        margin: 2px 0;
-        color: var(--muted);
-        font-size: 0.96rem;
-      }
-
-      .email {
-        margin-top: 10px;
-      }
-
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 18px;
-      }
-
-      .link-chip {
-        display: inline-flex;
-        align-items: center;
-        min-height: 34px;
-        padding: 5px 10px;
-        border: 1px solid var(--line);
-        border-radius: 4px;
-        background: var(--surface);
-        color: var(--text);
-        font-size: 0.88rem;
-      }
-
-      .link-chip:hover,
-      .link-chip:focus {
-        border-color: var(--accent);
-        color: var(--accent);
-        text-decoration: none;
-      }
-
-      main {
-        min-width: 0;
-      }
-
-      section {
-        margin-bottom: 38px;
-      }
-
-      h2 {
-        margin: 0 0 14px;
-        padding-bottom: 6px;
-        border-bottom: 1px solid var(--line);
-        font-size: 1.28rem;
-        line-height: 1.25;
-        letter-spacing: 0;
-      }
-
-      p {
-        margin: 0 0 14px;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 1.2rem;
-      }
-
-      li {
-        margin: 7px 0;
-      }
-
-      .highlight {
-        color: var(--accent);
-        font-weight: 600;
-      }
-
-      .publication-list {
-        display: grid;
-        gap: 14px;
-        padding: 0;
-        list-style: none;
-      }
-
-      .publication {
-        padding: 14px 16px;
-        border: 1px solid var(--line);
-        border-radius: 4px;
-        background: var(--surface);
-      }
-
-      .publication-title {
-        display: block;
-        margin-bottom: 4px;
-        font-weight: 700;
-      }
-
-      .publication-meta {
-        display: block;
-        color: var(--muted);
-        font-size: 0.94rem;
-      }
-
-      .note {
-        color: var(--muted);
-      }
-
-      footer {
-        width: min(var(--max-width), calc(100% - 40px));
-        margin: 0 auto;
-        padding: 20px 0 34px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
-      @media (max-width: 760px) {
-        .page {
-          grid-template-columns: 1fr;
-          gap: 30px;
-          padding-top: 34px;
-        }
-
-        .sidebar {
-          position: static;
-        }
-
-        .avatar {
-          width: 142px;
-          height: 142px;
-        }
-
-        h1 {
-          font-size: 1.82rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/publications.css" />
   </head>
+
   <body>
-    <div class="page">
-      <aside class="sidebar" aria-label="Profile">
-        <img
-          class="avatar"
-          src="https://github.com/deepforthink.png"
-          alt="Yufu Dong"
-          width="184"
-          height="184"
-        />
+    <div class="wrapper">
+      <header>
+        <a class="image avatar">
+          <img src="https://github.com/deepforthink.png" alt="avatar" />
+        </a>
+
         <h1>Yufu Dong</h1>
-        <p class="role">Undergraduate Student</p>
-        <p class="affiliation">Nankai University</p>
-        <p class="email">
-          <a href="mailto:yf_dong@mail.nankai.edu.cn"
-            >yf_dong(at)mail.nankai.edu.cn</a
-          >
-        </p>
-        <nav class="links" aria-label="Profile links">
-          <a class="link-chip" href="https://github.com/deepforthink">GitHub</a>
-          <a class="link-chip" href="https://dpthink.vercel.app/"
-            >Blog & Notes</a
-          >
+
+        <position style="font-size: 1.1rem;">Undergraduate Student</position>
+        <br />
+        <a href="https://en.nankai.edu.cn/" rel="noopener">
+          <autocolor>Nankai University</autocolor>
+        </a>
+        <br />
+        <email>yf_dong(at)mail.nankai.edu.cn</email>
+
+        <br />
+        <br />
+        <div class="social-icons">
           <a
-            class="link-chip"
-            href="https://www.zhihu.com/people/liu-lang-de-si-xiang"
-            >Zhihu</a
+            style="margin: 0 5px 0 0"
+            href="mailto:yf_dong@mail.nankai.edu.cn"
+            aria-label="Email"
+            title="Email"
           >
-          <a class="link-chip" href="https://x.com/PiersonD015">X</a>
-        </nav>
-      </aside>
+            <i class="fa-solid fa-envelope"></i>
+          </a>
 
-      <main>
-        <section id="about">
-          <h2>About Me</h2>
-          <p>
-            I am an undergraduate student majoring in
-            <span class="highlight">Intelligent Science and Technology</span>
-            at Nankai University.
-          </p>
-          <p>
-            My current interests center on reinforcement learning, robot
-            learning, and embodied intelligence. I am especially interested in
-            how learning-based methods can help robots perceive, reason, and
-            act in the physical world.
-          </p>
-          <p>
-            Outside research and study, I enjoy guitar, sports, fitness, and
-            meeting people who are curious about intelligent systems.
-          </p>
-        </section>
+          <a
+            style="margin: 0 5px 0 0"
+            href="https://github.com/deepforthink"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
 
-        <section id="interests">
-          <h2>Research Interests</h2>
-          <ul>
-            <li>Reinforcement learning and decision making</li>
-            <li>Robot learning, policy learning, and embodied intelligence</li>
-            <li>Vision-language-action models and action generation</li>
-            <li>Generative models for robot policies, including diffusion and flow-based methods</li>
-          </ul>
-        </section>
+          <a
+            style="margin: 0 5px 0 0"
+            href="https://dpthink.vercel.app/"
+            aria-label="Blog and notes"
+            title="Blog and notes"
+          >
+            <i class="fa-solid fa-pen-nib"></i>
+          </a>
 
-        <section id="publications">
-          <h2>Publications</h2>
-          <p class="note">
-            I am still early in my research training. Publications and preprints
-            will be listed here when available.
-          </p>
-        </section>
+          <a
+            style="margin: 0 5px 0 0"
+            href="https://x.com/PiersonD015"
+            aria-label="X"
+            title="X"
+          >
+            <i class="fab fa-x-twitter"></i>
+          </a>
 
-        <section id="writing">
-          <h2>Selected Writing & Notes</h2>
-          <ul class="publication-list">
-            <li class="publication">
-              <a
-                class="publication-title"
-                href="https://dpthink.vercel.app/posts/paper-reading/diffusion-policy/"
-                >Diffusion Policy: robot policy learning with diffusion models</a
-              >
-              <span class="publication-meta">Paper reading note</span>
+          <a
+            style="margin: 0 5px 0 0"
+            href="https://www.zhihu.com/people/liu-lang-de-si-xiang"
+            aria-label="Zhihu"
+            title="Zhihu"
+          >
+            <i class="fab fa-zhihu"></i>
+          </a>
+        </div>
+        <br />
+      </header>
+
+      <section>
+        <h2 id="about-me">About Me</h2>
+
+        <p>
+          I am an undergraduate student majoring in
+          <a href="https://en.nankai.edu.cn/">Intelligent Science and Technology</a>
+          at Nankai University.
+        </p>
+
+        <p>
+          My research interests lie in
+          <strong>reinforcement learning, robot learning, and embodied intelligence</strong>.
+          I am interested in how intelligent systems perceive, learn, and
+          interact with the physical world.
+        </p>
+
+        <p>
+          I also maintain a personal blog for study notes, paper readings, and
+          learning records at
+          <a href="https://dpthink.vercel.app/">dpthink.vercel.app</a>.
+        </p>
+
+        <h2 id="research-interests">Research Interests</h2>
+
+        <ul>
+          <li>Reinforcement learning and decision making</li>
+          <li>Robot learning, policy learning, and embodied intelligence</li>
+          <li>Vision-language-action models and action generation</li>
+          <li>Generative models for robot policies, including diffusion and flow-based methods</li>
+        </ul>
+
+        <h2 id="publications" style="margin: 2px 0 -15px;">Publications</h2>
+
+        <div class="publications">
+          <ol class="bibliography">
+            <li>
+              <div class="pub-row">
+                <div
+                  class="col-sm-3 abbr"
+                  style="position: relative; padding-right: 15px; padding-left: 15px;"
+                >
+                  <div class="teaser placeholder-teaser">In Progress</div>
+                  <abbr class="badge">Research</abbr>
+                </div>
+                <div
+                  class="col-sm-9"
+                  style="position: relative; padding-right: 15px; padding-left: 20px;"
+                >
+                  <div class="title">Research in progress</div>
+                  <div class="author">
+                    Publications and preprints will be listed here when
+                    available.
+                  </div>
+                  <div class="periodical">
+                    <em>Updated 2026.</em>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="publication">
-              <a
-                class="publication-title"
-                href="https://dpthink.vercel.app/posts/learning/vla-prerequisites/"
-                >From Transformer to Decision Transformer: prerequisites for VLA</a
-              >
-              <span class="publication-meta">Learning note</span>
-            </li>
-            <li class="publication">
-              <a
-                class="publication-title"
-                href="https://dpthink.vercel.app/posts/learning/flow-matching-first-principles/"
-                >Flow Matching from first principles</a
-              >
-              <span class="publication-meta">Generative modeling note</span>
-            </li>
-          </ul>
-        </section>
+            <br />
+          </ol>
+        </div>
 
-        <section id="contact">
-          <h2>Contact</h2>
-          <p>
-            Feel free to contact me by
-            <a href="mailto:yf_dong@mail.nankai.edu.cn">email</a> if you would
-            like to discuss reinforcement learning, embodied intelligence, robot
-            learning papers, or related study projects.
-          </p>
-        </section>
-      </main>
+        <h2 id="selected-writing" style="margin: 2px 0 -15px;">
+          Selected Writing &amp; Notes
+        </h2>
+
+        <div class="publications">
+          <ol class="bibliography">
+            <li>
+              <div class="pub-row">
+                <div
+                  class="col-sm-3 abbr"
+                  style="position: relative; padding-right: 15px; padding-left: 15px;"
+                >
+                  <div class="teaser placeholder-teaser">Paper Reading</div>
+                  <abbr class="badge">Note</abbr>
+                </div>
+                <div
+                  class="col-sm-9"
+                  style="position: relative; padding-right: 15px; padding-left: 20px;"
+                >
+                  <div class="title">
+                    <a
+                      href="https://dpthink.vercel.app/posts/paper-reading/diffusion-policy/"
+                    >
+                      Diffusion Policy: robot policy learning with diffusion models
+                    </a>
+                  </div>
+                  <div class="author">
+                    Paper reading note on diffusion-based robot policy learning.
+                  </div>
+                  <div class="periodical">
+                    <em>Blog note.</em>
+                  </div>
+                  <div class="links">
+                    <a
+                      href="https://dpthink.vercel.app/posts/paper-reading/diffusion-policy/"
+                      class="btn btn-sm z-depth-0"
+                      role="button"
+                      target="_blank"
+                      style="font-size: 12px;"
+                      >website</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
+
+            <li>
+              <div class="pub-row">
+                <div
+                  class="col-sm-3 abbr"
+                  style="position: relative; padding-right: 15px; padding-left: 15px;"
+                >
+                  <div class="teaser placeholder-teaser">VLA</div>
+                  <abbr class="badge">Note</abbr>
+                </div>
+                <div
+                  class="col-sm-9"
+                  style="position: relative; padding-right: 15px; padding-left: 20px;"
+                >
+                  <div class="title">
+                    <a
+                      href="https://dpthink.vercel.app/posts/learning/vla-prerequisites/"
+                    >
+                      From Transformer to Decision Transformer: prerequisites for VLA
+                    </a>
+                  </div>
+                  <div class="author">
+                    A structured learning note for vision-language-action models.
+                  </div>
+                  <div class="periodical">
+                    <em>Learning note.</em>
+                  </div>
+                  <div class="links">
+                    <a
+                      href="https://dpthink.vercel.app/posts/learning/vla-prerequisites/"
+                      class="btn btn-sm z-depth-0"
+                      role="button"
+                      target="_blank"
+                      style="font-size: 12px;"
+                      >website</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
+
+            <li>
+              <div class="pub-row">
+                <div
+                  class="col-sm-3 abbr"
+                  style="position: relative; padding-right: 15px; padding-left: 15px;"
+                >
+                  <div class="teaser placeholder-teaser">Flow</div>
+                  <abbr class="badge">Note</abbr>
+                </div>
+                <div
+                  class="col-sm-9"
+                  style="position: relative; padding-right: 15px; padding-left: 20px;"
+                >
+                  <div class="title">
+                    <a
+                      href="https://dpthink.vercel.app/posts/learning/flow-matching-first-principles/"
+                    >
+                      Flow Matching from first principles
+                    </a>
+                  </div>
+                  <div class="author">
+                    A first-principles note on flow matching and generative models.
+                  </div>
+                  <div class="periodical">
+                    <em>Generative modeling note.</em>
+                  </div>
+                  <div class="links">
+                    <a
+                      href="https://dpthink.vercel.app/posts/learning/flow-matching-first-principles/"
+                      class="btn btn-sm z-depth-0"
+                      role="button"
+                      target="_blank"
+                      style="font-size: 12px;"
+                      >website</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
+          </ol>
+        </div>
+
+        <h2 id="contact">Contact</h2>
+
+        <p>
+          Feel free to contact me by
+          <a href="mailto:yf_dong@mail.nankai.edu.cn">email</a> if you would
+          like to discuss reinforcement learning, embodied intelligence, robot
+          learning papers, or related study projects.
+        </p>
+
+        <br />
+        <small>
+          Design based on
+          <a
+            href="https://github.com/yaoyao-liu/minimal-light"
+            target="_blank"
+            rel="noopener"
+            >Minimal Light</a
+          >
+          theme.
+        </small>
+        <br />
+        <small>Copyright &copy; 2026 Yufu Dong.</small>
+      </section>
+
+      <footer></footer>
     </div>
-
-    <footer>
-      Powered by GitHub Pages. Last updated in 2026.
-    </footer>
   </body>
 </html>
